@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сервис комментариев</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/1370/1370536.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="assets/style/normalize.css">
+    <link rel="stylesheet" type="text/css" href="assets/style/style.css">
+</head>
+
+<body class="bodystyle">
+    <!--Заголовок-->
+    <h1 class="title">Сервис комментариев со спам-фильтром</h1>
+    <!--Блоки-->
+    <div class="container_all">
+
+        <!--Оставьте ваш комментарий-->
+        <div class="container_yourinfo">
+            <h2>Оставьте Ваш комментарий</h2>
+            <!--Имя-->
+            <div>Введите Ваше <b>Имя</b></div>
+            <input class="info_details" type="text" id="name" placeholder="Ваше имя">
+            <!--Аватар-->
+            <div>Введите ссылку на <b>Ваш аватар</b></div>
+            <input class="info_details" type="search" name="input_url" id="foto" list="url-list"
+                placeholder="http://adres.ex/">
+            <!--Комментарий-->
+            <div>Оставьте <b>Ваш комментарий</b></div>
+            <textarea class="comment" id="comment" name="comment"
+                placeholder="Здесь можно оставить Ваш комментарий"></textarea>
+            <!--Отправить-->
+            <input class="button_post" type="submit" id="result" value="Отправить">
+        </div>
+
+        <!--Чат-->
+        <div class="container_chat">
+            <h2>Чат</h2>
+            <!--Отображение имени-->
+            <input type="text" id="name_result" class="chat_name_result" readonly>
+            <!--Отображение аватара-->
+            <div ><img id="img_foto" class="chat_foto_result"src=""></div>
+            <!--Отображение комментария-->
+            <textarea class="comment_result" type="text" id="comment_result" class="chat_comment_result"
+                readonly></textarea>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
